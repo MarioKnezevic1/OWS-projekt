@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter - Konverter Valuta</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Naslovna</a></li>
+                <li><a href="about.html">O Nama</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="converter.html">Konverter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="converter">
+            <h1>Konverter Valuta</h1>
+            <form id="converter-form">
+                <label for="amount">Iznos:</label>
+                <input type="number" id="amount" required>
+
+                <label for="from-currency">Iz:</label>
+                <select id="from-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="HRK">HRK</option>
+                </select>
+
+                <label for="to-currency">U:</label>
+                <select id="to-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="HRK">HRK</option>
+                </select>
+
+                <button type="submit">Pretvori</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Konverter Valuta</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
